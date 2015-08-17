@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView android:id="@+id/view_edit_text"
+              style="@style/login_text_style"/>
+    <EditText android:id="@+id/view_edit"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:inputType="phone"
+              android:layout_marginTop="10dp"
+              android:background="@color/transparent"
+              android:textSize="16sp"/>
+    <TextView android:id="@+id/view_edit_line" style="@style/login_line_style"/>
+    <RelativeLayout android:id="@+id/view_edit_hint" style="@style/login_rr_hint_style">
+        <TextView android:id="@+id/view_edit_hint_text" style="@style/login_text_hint_style"/>
+        <ImageView style="@style/login_img_hint_style"/>
+    </RelativeLayout>
+</LinearLayout>

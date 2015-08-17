@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--activity_login-->
+    <style name="login_text_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/login_text</item>
+    </style>
+    <style name="login_rr_hint_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">17sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+    <style name="login_text_hint_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/login_hint</item>
+    </style>
+    <style name="login_img_hint_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/warn</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="login_btn_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/selectors_btn_button</item>
+    </style>
+    <style name="login_line_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/login_line</item>
+    </style>
+    <!--activity_personal-->
+    <style name="personal_rr_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+    <style name="personal_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/phone_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

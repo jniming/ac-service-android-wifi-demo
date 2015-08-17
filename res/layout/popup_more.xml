@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+                 android:id="@+id/popup_add"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <TextView android:id="@+id/add_new_device"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/popup_text_height"
+                  android:gravity="center"
+                  android:textColor="@color/phone_text"
+                  android:background="@drawable/selectors_bg_white"
+                  android:textSize="14sp"
+                  android:text="添加新设备"/>
+        <TextView style="@style/login_line_style"/>
+
+        <TextView android:id="@+id/add_share_device"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/popup_text_height"
+                  android:gravity="center"
+                  android:textColor="@color/phone_text"
+                  android:background="@drawable/selectors_bg_white"
+                  android:textSize="14sp"
+                  android:text="添加别人分享设备"/>
+        <TextView style="@style/login_line_style"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/popup_more"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+        <TextView android:id="@+id/popup_modify_device"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/popup_text_height"
+                  android:gravity="center"
+                  android:textColor="@color/phone_text"
+                  android:background="@drawable/selectors_bg_white"
+                  android:textSize="14sp"
+                  android:text="@string/modify_device_first"/>
+        <TextView style="@style/login_line_style"/>
+
+        <TextView android:id="@+id/popup_share"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/popup_text_height"
+                  android:gravity="center"
+                  android:textColor="@color/phone_text"
+                  android:background="@drawable/selectors_bg_white"
+                  android:textSize="14sp"
+                  android:text="@string/share_device"/>
+        <TextView style="@style/login_line_style"/>
+        <TextView android:id="@+id/popup_invite_user"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/popup_text_height"
+                  android:gravity="center"
+                  android:textColor="@color/phone_text"
+                  android:background="@drawable/selectors_bg_white"
+                  android:textSize="14sp"
+                  android:text="@string/invite_user"/>
+        <TextView style="@style/login_line_style"/>
+        <TextView android:id="@+id/popup_shared_user"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/popup_text_height"
+                  android:gravity="center"
+                  android:textColor="@color/phone_text"
+                  android:background="@drawable/selectors_bg_white"
+                  android:textSize="14sp"
+                  android:text="@string/shared_user"/>
+        <TextView style="@style/login_line_style"/>
+        <TextView android:id="@+id/popup_delete"
+                  android:layout_width="match_parent"
+                  android:layout_height="@dimen/popup_text_height"
+                  android:gravity="center"
+                  android:textColor="@color/phone_text"
+                  android:background="@drawable/selectors_bg_white"
+                  android:textSize="14sp"
+                  android:text="@string/delete_device"/>
+        <TextView style="@style/login_line_style"/>
+    </LinearLayout>
+</LinearLayout>

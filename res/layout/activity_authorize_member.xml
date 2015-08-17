@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/member_owner_text"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/owner"
+        android:textColor="@color/phone_text"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/member_owner_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/member_owner_Img"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:src="@drawable/member_icon" />
+
+        <TextView
+            android:id="@+id/member_owner_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/member_owner_Img"
+            android:textColor="@color/phone_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/member_owner_unbind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/unbind"
+            android:textColor="@color/theme"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/login_line_style"
+            android:layout_alignLeft="@id/member_owner_name"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/member_people_text"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:text="@string/authorized_member_authorized_text"
+        android:textColor="@color/phone_text"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/member_people_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+</LinearLayout>
+

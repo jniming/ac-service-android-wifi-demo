@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/dialog_unbind_device"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="解绑该设备后，您将对它失去使用权,您确定要解绑吗？"
+            android:textSize="14sp"
+            android:textColor="@color/phone_text"
+            android:lineSpacingExtra="7dp"
+            android:layout_marginLeft="16dp"/>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="48dp"
+                  android:layout_marginTop="20dp"
+                  android:paddingTop="1dp"
+                  android:orientation="horizontal"
+                  android:background="#c6c6c6">
+        <Button android:id="@+id/unbind_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:layout_marginRight="1dp"
+                android:text="取消"
+                android:textSize="14dp"
+                android:textColor="@color/phone_text"
+                android:background="@color/white"/>
+        <Button android:id="@+id/unbind_sure"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:text="确认"
+                android:textSize="14dp"
+                android:textColor="@color/theme"
+                android:background="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="48dp"
+              android:textSize="12sp"
+              android:textColor="@color/phone_text"
+              android:gravity="center_vertical"
+              android:background="@color/phone_line"
+              android:text="此邀请方式要求被邀请人手机账号已注册"
+              android:paddingLeft="16dp"/>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="1dp"
+                  android:background="@color/phone_line"/>
+    <com.accloud.ac_service_android_wifi_demo.view.CusEditText
+            android:id="@+id/invite_user_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+    <Button android:id="@+id/invite_ok"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="确定邀请"
+            style="@style/login_btn_style"/>
+</LinearLayout>
+

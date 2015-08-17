@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="vertical"
+                android:background="@color/white">
+    <Button style="@style/login_btn_style"
+            android:id="@+id/firmware_update_all_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:text="全部升级"/>
+    <ListView
+            android:id="@+id/firmware_update_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/firmware_update_all_btn"
+            android:divider="@color/login_line"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="true"/>
+</RelativeLayout>

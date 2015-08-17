@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.accloud.ac_service_android_wifi_demo"
+          android:versionCode="1"
+          android:versionName="1.0.0">
+    <uses-sdk android:minSdkVersion="8"
+              android:targetSdkVersion="17"/>
+
+    <application
+            android:name=".application.MainApplication"
+            android:allowBackup="true"
+            android:icon="@drawable/ablecloud_logo"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        <!--登录-->
+        <activity
+                android:name=".activity.login.LoginActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.login.PhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.login.VCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.login.PasswordActivity" android:screenOrientation="portrait"/>
+        <!--添加设备-->
+        <activity
+                android:name=".activity.add.DeviceReadyActivity" android:screenOrientation="portrait"/>
+        <activity
+                android:name=".activity.add.AddDeviceActivity"
+                android:screenOrientation="portrait"/>
+        <!-- 设备管理与升级-->
+        <activity android:name=".activity.device.MainActivity" android:screenOrientation="portrait"
+                  android:launchMode="singleTask"/>
+        <activity
+                android:name=".activity.device.ManagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.device.FirmwareUpdateActivity" android:screenOrientation="portrait"/>
+        <!--个人中心-->
+        <activity android:name=".activity.personal.PersonalActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.personal.ChangePwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.personal.BindAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.personal.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.personal.InviteUserActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".activity.personal.AuthorizedMemberActivity" android:screenOrientation="portrait"/>
+        <!-- 二维码扫描-->
+        <activity android:name="zxing.CaptureActivity" android:screenOrientation="portrait"/>
+        <!-- 分享设备 -->
+        <activity android:name="zxing.ShareActivity" android:screenOrientation="portrait"/>
+
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!-- 分享编辑页 -->
+        <activity
+                android:name="com.umeng.socialize.view.ShareActivity"
+                android:configChanges="orientation|keyboard"
+                android:launchMode="singleTask"
+                android:noHistory="true"
+                android:theme="@style/Theme.UMDialog"
+                android:windowSoftInputMode="stateVisible|adjustResize">
+        </activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+                android:name="com.tencent.tauth.AuthActivity"
+                android:launchMode="singleTask"
+                android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="1104686853"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.tencent.connect.common.AssistActivity"
+                android:screenOrientation="portrait"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+        <!-- 微信分享 -->
+        <activity
+                android:name="wxapi.WXEntryActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:exported="true"
+                android:screenOrientation="portrait"/>
+        <!--友盟自动更新-->
+        <service
+                android:name="com.umeng.update.net.DownloadingService"
+                android:process=":DownloadingService">
+        </service>
+        <activity
+                android:name="com.umeng.update.UpdateDialogActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+
+        <meta-data
+                android:name="UMENG_APPKEY"
+                android:value="5562cf3267e58e6cac002084"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="umeng"/>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera"/>
+    <!-- 自动聚焦权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <!-- ###################声明SDK使用的相关权限###################### -->
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+</manifest>

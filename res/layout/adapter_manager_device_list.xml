@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:id="@+id/adapter_manager_list_device"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/selectors_bg_white">
+    <ImageView android:id="@+id/adapter_manager_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"/>
+    <TextView
+            android:id="@+id/adapter_manager_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/adapter_manager_icon"
+            android:text="三色灯"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+    <TextView style="@style/login_line_style"
+              android:layout_alignLeft="@id/adapter_manager_device_name"
+              android:layout_alignParentBottom="true"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:layout_centerVertical="true" android:src="@drawable/manager"
+               android:layout_alignParentRight="true"/>
+</RelativeLayout>

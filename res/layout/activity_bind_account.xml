@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp"
+              android:background="@color/white">
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QQ号"
+                android:textSize="17sp"/>
+        <TextView
+                android:id="@+id/bind_qq_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击绑定"
+                android:textColor="@color/theme"
+                android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="1dp"
+              android:background="@color/phone_line"/>
+
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="微信号"
+                  android:textSize="17sp"/>
+
+        <TextView
+                android:id="@+id/bind_weixin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/theme"
+                android:text="点击绑定"
+                android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="1dp"
+              android:background="@color/phone_line"/>
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="新浪微博"
+                  android:textSize="17sp"/>
+        <TextView
+                android:id="@+id/bind_sina_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/theme"
+                android:text="点击绑定"
+                android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <TextView android:layout_width="fill_parent"
+              android:layout_height="1dp"
+              android:background="@color/phone_line"/>
+</LinearLayout>

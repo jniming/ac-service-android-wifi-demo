@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/dialog_update_device"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <TextView android:id="@+id/dialog_update_title"
+              android:layout_width="fill_parent"
+              android:layout_height="64dp"
+              android:gravity="center_vertical"
+              android:layout_marginLeft="16dp"
+              android:textColor="@color/theme"
+              android:textSize="24sp"/>
+    <TextView android:layout_width="fill_parent" android:layout_height="2dp"
+              android:background="@color/theme"/>
+    <TextView
+            android:id="@+id/dialog_update_log"
+            android:layout_marginTop="28dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/phone_text"
+            android:lineSpacingExtra="7dp"
+            android:layout_marginLeft="16dp"/>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="48dp"
+                  android:layout_marginTop="28dp"
+                  android:paddingTop="1dp"
+                  android:orientation="horizontal"
+                  android:background="#c6c6c6">
+        <Button android:id="@+id/dialog_update_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:layout_marginRight="1dp"
+                android:text="取消"
+                android:textSize="14dp"
+                android:textColor="@color/phone_text"
+                android:background="@color/white"/>
+        <Button android:id="@+id/dialog_update_sure"
+                android:layout_width="fill_parent"
+                android:layout_height="47dp"
+                android:layout_weight="1"
+                android:text="确认"
+                android:textSize="14dp"
+                android:textColor="@color/theme"
+                android:background="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

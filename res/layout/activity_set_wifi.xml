@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="26dp">
+        <ImageView android:id="@+id/wifi_icon"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginLeft="12dp"
+                   android:src="@drawable/add_wifi"/>
+        <TextView android:id="@+id/set_text_wifi_name"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/wifi_icon"
+                  android:text="@string/add_device_ssid_hint"
+                  android:layout_marginLeft="20dp"
+                  android:textSize="16sp"
+                  android:textColor="@color/phone_text"/>
+        <TextView android:id="@+id/set_wifi_name"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/set_text_wifi_name"
+                  android:layout_alignLeft="@id/set_text_wifi_name"
+                  android:layout_centerVertical="true"
+                  android:textSize="12sp"
+                  android:textColor="@color/login_text"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true" android:src="@drawable/add_nav"/>
+
+        <TextView android:id="@+id/set_text_pwd"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/add_device_pwd_hint"
+                  android:textColor="@color/login_text"
+                  android:textSize="12sp"
+                  android:layout_marginTop="26dp"
+                  android:layout_below="@id/set_wifi_name"
+                  android:layout_alignLeft="@id/set_wifi_name"/>
+        <EditText android:id="@+id/set_pwd"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:layout_below="@id/set_text_pwd"
+                  android:layout_alignLeft="@id/set_text_pwd"
+                  android:textColor="@color/black"
+                  android:password="true"
+                  android:background="@color/transparent"
+                  android:textSize="16sp"/>
+        <TextView android:layout_below="@id/set_pwd"
+                  android:layout_alignLeft="@id/set_pwd"
+                  style="@style/login_line_style"/>
+    </RelativeLayout>
+    <Button android:id="@+id/connect"
+            android:text="@string/sure"
+            android:layout_marginTop="30dp"
+            style="@style/login_btn_style"/>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@color/white">
+    <ImageView android:id="@+id/adapter_member_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:src="@drawable/member_icon"/>
+    <TextView
+            android:id="@+id/adapter_member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/adapter_member_icon"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+    <TextView style="@style/login_line_style"
+              android:layout_alignParentBottom="true"
+              android:layout_alignLeft="@id/adapter_member_name"/>
+    <ToggleButton
+            android:id="@+id/adapter_member_toggle_button"
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            android:background="@drawable/selectors_toggle"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:textOff=""
+            android:textOn=""
+            android:layout_alignParentRight="true"/>
+</RelativeLayout>

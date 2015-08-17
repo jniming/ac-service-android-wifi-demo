@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg">
+    <TextView
+            android:id="@+id/about_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:drawableTop="@drawable/about"
+            android:text="AbleCloud"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+    <TextView
+            android:id="@+id/about_copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:text="@string/about_copyright"
+            android:textSize="15sp"
+            android:textColor="@color/grey"/>
+    <TextView
+            android:id="@+id/about_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_above="@id/about_copyright"
+            android:text="@string/about_detail"
+            android:textSize="13sp"
+            android:textColor="@color/grey"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/about_introduction"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/about_general"
+            android:textSize="28sp"
+            android:textColor="@color/theme"/>
+</RelativeLayout>

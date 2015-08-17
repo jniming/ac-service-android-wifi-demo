@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp">
+
+    <com.accloud.ac_service_android_wifi_demo.view.CusEditText
+            android:id="@+id/vcode"
+            android:layout_marginTop="26dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    <Button android:id="@+id/vcode_next"
+            android:layout_marginTop="13dp"
+            android:text="@string/next"
+            style="@style/login_btn_style"/>
+    <Button android:id="@+id/vcode_resend"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/theme"
+            android:textSize="16sp"
+            android:background="@drawable/selectors_btn_button_resend"
+            android:text="@string/vcode_sms_resend"/>
+</LinearLayout>

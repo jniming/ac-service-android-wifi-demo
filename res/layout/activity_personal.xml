@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:background="@color/white">
+
+    <RelativeLayout android:id="@+id/personal_change_name" style="@style/personal_rr_style"
+                    android:layout_marginTop="26dp">
+        <TextView android:text="@string/personal_change_nickname"
+                  style="@style/personal_text_style"/>
+        <TextView android:id="@+id/personal_name"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"
+                  android:textColor="@color/login_text"
+                  android:textSize="14sp"/>
+    </RelativeLayout>
+    <TextView style="@style/login_line_style"/>
+
+    <RelativeLayout android:id="@+id/personal_change_pwd" style="@style/personal_rr_style">
+        <TextView android:text="@string/personal_change_pwd"
+                  style="@style/personal_text_style"/>
+    </RelativeLayout>
+
+    <TextView style="@style/login_line_style"/>
+
+    <Button android:id="@+id/personal_logout"
+            android:layout_marginTop="30dp"
+            android:text="@string/personal_logout"
+            style="@style/login_btn_style"/>
+</LinearLayout>

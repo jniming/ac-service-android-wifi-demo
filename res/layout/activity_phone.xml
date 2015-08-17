@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+    <LinearLayout android:id="@+id/phone_text_hint" android:layout_width="fill_parent"
+                  android:layout_height="48dp" android:orientation="vertical">
+        <TextView android:layout_width="fill_parent" android:layout_height="47dp"
+                  android:textSize="12sp" android:textColor="@color/phone_text" android:gravity="center_vertical"
+                  android:background="@color/login_line" android:text="@string/phone_text_hint"
+                  android:paddingLeft="16dp"/>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="1dp"
+                      android:background="@color/phone_line"/>
+    </LinearLayout>
+
+    <com.accloud.ac_service_android_wifi_demo.view.CusEditText
+            android:id="@+id/phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="16dp"/>
+
+    <Button android:id="@+id/phone_next"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/next"
+            style="@style/login_btn_style"/>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="56dp"
+                android:id="@+id/titlebar_layout"
+                android:background="@color/theme"
+                android:orientation="horizontal">
+    <LinearLayout android:id="@+id/header_left_ll"
+                  android:layout_width="56dp" android:layout_height="fill_parent"
+                  android:layout_alignParentLeft="true">
+        <TextView
+                android:id="@+id/header_left_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/header_right_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+    <TextView
+            android:id="@+id/header_right2_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/header_right_btn"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+    <TextView
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/header_left_ll"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+</RelativeLayout>

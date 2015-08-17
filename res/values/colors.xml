@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme">#00a199</color>
+    <color name="theme2">#00a190</color>
+    <color name="bg">#F0F0F0</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="grey">#aaaaaa</color>
+
+    <!-- 二维码扫描 -->
+    <color name="viewfinder_laser">#ff8BC34A</color>
+    <color name="viewfinder_mask">#7f000000</color>
+
+    <!--main-->
+    <color name="main_logo_bg">#00b8ae</color>
+    <color name="main_icon_bg">#29c3bb</color>
+
+    <!--login-->
+    <color name="login_text">#9a9a9a</color>
+    <color name="login_line">#ebebeb</color>
+    <color name="login_hint">#f24235</color>
+
+    <!--phone-->
+    <color name="phone_text">#404040</color>
+    <color name="phone_line">#cccccc</color>
+
+    <!--personal-->
+    <color name="personal_user_type">#88ffffff</color>
+
+    <!-- selectors-->
+    <color name="select_white">#d0d0d0</color>
+</resources>
